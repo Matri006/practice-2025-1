@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telegram-бот</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .image-gallery img:hover {
+      transform: scale(1.03);
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Фреймворк для алгоритмического трейдинга</h1>
+    <p>Сайт проекта по дисциплине «Проектная деятельность»</p>
+  </header>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="index.html">Домой</a></li>
+      <li><a href="about.html">О проекте</a></li>
+      <li><a href="team.html">Участники</a></li>
+      <li><a href="journal.html">Журнал</a></li>
+      <li><a href="resources.html">Ресурсы</a></li>
+      <li><a href="bot.html" class="active">Telegram-бот</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="section-annotation">
+      <h2>О Telegram-боте</h2>
+
+      <article>
+        <p>
+          Этот Telegram-бот — простой и удобный инструмент для ежедневной работы с валютами.
+        </p>
+      </article>
+
+      <article>
+        <h3>Что умеет бот:</h3>
+        <ul class="styled-list">
+          <li>Конвертировать валюты по актуальному курсу</li>
+          <li>Присылать ежедневные обновления по избранным валютам</li>
+          <li>Позволять добавлять и удалять валюты из избранного</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Примеры интерфейса бота</h3>
+        <p>
+          Ниже представлены скриншоты, демонстрирующие работу Telegram-бота:
+        </p>
+        <div class="image-gallery">
+          <img src="images/interface1.jpg" alt="Сразу после старта">
+          <img src="images/interface2.jpg" alt="Результат конвертации">
+        
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 AlgoTrade Framework — Проект студентов</p>
+  </footer>
+</body>
+</html>
